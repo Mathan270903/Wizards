@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kahe-Result (Academic)</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="/css/exams.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="/assets/logo.jpg" alt="Logo">
+        </div>
+
+        <div class="lists">
+            <ul>
+                <li><a href="/html/index.html">Home</a></li>
+                <li class="drive-list"><a href="#">Drive <ion-icon name="chevron-down-outline" class="icon"></ion-icon></a>
+                    <ul class="dropdown">
+                        <li><a href="/html/prevdrive.html">Previous Drive</a></li>
+                        <li><a href="/html/nextdrive.html">Upcoming Drive</a></li>
+                        <li><a href="/html/leaderboard.html">Leaderboard</a></li>
+                    </ul>
+                </li>
+                <li class="exam-menu"><a href="#">Exam <ion-icon name="chevron-down-outline" class="icon"></ion-icon></a>
+                    <ul class="exam">
+                        <li><a href="/html/academicres.html">Academics Results</a></li>
+                        <li><a href="/html/placementres.html">Placement Results</a></li>
+                    </ul>
+                </li>
+                <li class="attendance-menu"><a href="#">Attendance <ion-icon name="chevron-down-outline" class="icon"></ion-icon></a>
+                    <ul class="attendance">
+                        <li><a href="/html/attendance.html">Academics</a></li>
+                        <li><a href="/html/placement.html">Placement</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="btns">
+            <a href="/html/contact.html">Contact Us</a>
+            <a href="/html/login.html" class="logout">Logout</a>
+        </div>
+    </nav>
+    <div class="result-top">
+        <div class="qoutes">
+            <h1>Exam Results (Academics)</h1>
+            <q>Dont Worry About Your Failures... Make Them a Stepping Stone To Success...!</q>
+        </div>
+        <div class="img">
+            <img src="/assets/resultimg.jpg" alt="resultimg">
+        </div>
+    </div>
+    <hr>
+    <div class="result-filter">
+        <h1>Which Semester You are from ?</h1>
+        <div class="filter-details">
+            <div class="box">
+                    <div class="box-left">
+                        <h4> semester &nbsp;: </h4>
+                    </div>
+                    <div class="box-right">
+                        <input type="number" min="1" max="8" value="1">
+                    </div>
+            </div>
+            <button class="box-btn">Submit</button>
+        </div>
+    </div>
+    <hr>
+    <div class="result-details">
+        <h1>Student Details</h1>
+        <div class="rd">
+            <div class="detail1">
+                <h4>Name : Hariharasudhan.S.K</h4>
+                <h4>Roll Number : 21becsd024</h4>
+            </div>
+            <div class="detail2">
+                <h4>Department : Computer Science and Design</h4>
+                <h4>Semester : 4</h4>
+            </div>
+        </div>
+        <hr>
+        <div class="result-content">
+            <table>
+                <tr>
+                    <th>Semester</th>
+                    <th>Subject</th>
+                    <th>Grade</th>
+                    <th>Result</th>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>sub1</td>
+                    <td>B</td>
+                    <td class="passfail">Pass</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>sub2</td>
+                    <td>B</td>
+                    <td class="passfail">Pass</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>sub3</td>
+                    <td>B+</td>
+                    <td class="passfail">Pass</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>sub4</td>
+                    <td>C</td>
+                    <td class="passfail">Pass</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>sub5</td>
+                    <td>A+</td>
+                    <td class="passfail">Pass</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    height:100vh;
+    width:100vw;
+    background-color: rgba(255, 255, 255, 0.822);
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+    color:black;
+}
+.container{
+    width:60%;
+    height:60%;
+    background-color:#fafafafb;
+    display:flex;
+    justify-content:space-between;
+}
+.container .img{
+    width:50%;
+    height:100%;
+}
+.container .img img{
+    height: 100%;
+    width: 100%;
+    object-fit:contain;
+}
+.details{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+}
+.details h1{
+    width:70%;
+}
+.details .input{
+    display: flex;
+    flex-direction: column;
+    width:70%;
+    gap:20px;
+}
+.details .input input{
+    padding:8px 10px;
+    background-color:rgba(128, 128, 128, 0.475);
+    border:none;
+    outline:none;
+}
+.details .links{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin-top:-10px;
+}
+.details .links a{
+    font-size:15px;
+    text-decoration: none;
+    color:black;
+}
+.details .links a:hover{
+    color:blue;
+    text-decoration: underline;
+}
+.details .lbtn,.rbtn{
+    padding:8px 0px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: rgba(37, 116, 0, 0.874);
+    border:none;
+    outline:none;
+    font-size: 16px;
+    font-weight:600;
+    color:rgb(255, 255, 255);
+    border-radius:4px;
+    width:70%;
+}
+.details .lbtn:hover,.rbtn:hover{
+    background-color: rgb(37, 116, 0);
+}
+.details .lbtn:active{
+    scale:0.99;
+}

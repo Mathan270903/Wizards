@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.home-container {
+    font-family: 'Outfit', sans-serif;
+    
+}
+
+nav {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 2rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    
+}
+
+.logo img {
+    height: 100px;
+    width: 200px;
+}
+
+.lists ul {
+    list-style-type: none;
+    display: flex;
+
+}
+
+.lists ul li {
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.lists ul li a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #fff;
+    padding: 0 1rem;
+}
+
+.btns a {
+    padding: 0 0.5rem;
+    font-size: 1.1rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btns .logout {
+    padding: 0.5rem;
+    border-radius: 10px;
+    background-color: red;
+}
+
+ul.dropdown,
+ul.attendance,
+ul.exam {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    color: #000;
+    z-index: 999;
+}
+
+ul.dropdown li,
+ul.attendance li,
+ul.exam li {
+    height: 50px;
+    background-color: #000;
+    display: none;
+}
+
+ul.dropdown li a,
+ul.attendance li a,
+ul.exam li a {
+    color: #fff;
+}
+
+ul.dropdown li:hover,
+ul.attendance li:hover,
+ul.exam li:hover {
+    display: block;
+    background-color: #000000b0;
+    z-index: 1000;
+}
+
+.drive-list:hover ul.dropdown li {
+    display: block;
+}
+
+.exam-menu:hover ul.exam li {
+    display: block;
+}
+
+.attendance-menu:hover ul.attendance li {
+    display: block;
+}
+
+.headings{
+    height: 100%;
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:3rem 0;
+}
+.headings .image{
+    margin-top: 50px;
+    width:40%;
+
+}
+.headings .image img{
+    height:100%;
+    width:100%;
+}
+.search{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.search input{
+    padding:10px 10px;
+    width:30%;
+    border:none;
+    outline:none;
+    background: rgb(96,96,96);
+    background: linear-gradient(90deg, rgba(96, 96, 96, 0.575) 0%, rgba(187,186,186,1) 54%);
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    font-weight: 600;
+}
+.search input:focus{
+    background: rgb(174,174,175);
+    background: linear-gradient(90deg, rgba(174,174,175,1) 0%, rgba(119,119,119,1) 54%);
+}
+.search input:focus::placeholder{
+    color:white;
+}
+.search .scicon{
+    background-color: black;
+    padding:10px;
+    color:white;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor:pointer;
+}
+.leader{
+    width:100%;
+    display: flex;
+    justify-content:center;
+    padding-top:5rem;
+    padding-bottom: 2rem;
+}
+.leader .leader-box{
+    width:80%;
+}
+.leader .leader-box table{
+    width:100%;
+    border:1px solid black;
+}
+.leader .leader-box td,th{
+    border:1px solid black;
+    padding:10px;
+    background-color: rgba(128, 128, 128, 0.411);
+}

@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Outfit', sans-serif;
+}
+nav{
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 2rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 100px;
+    width: 200px;
+}
+
+.lists ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.lists ul li{
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.lists ul li a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #fff;
+    padding: 0 1rem;
+}
+
+.btns a {
+    padding: 0 0.5rem;
+    font-size: 1.1rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btns .logout {
+    padding: 0.5rem;
+    border-radius: 10px;
+    background-color: red;
+}
+
+ul.dropdown,
+ul.attendance,
+ul.exam {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:100px;
+    color: #000;
+    z-index: 999;
+}
+
+ul.dropdown li,
+ul.attendance li,
+ul.exam li {
+    height: 50px;
+    background-color: #000;
+    display: none;
+}
+
+ul.dropdown li a,
+ul.attendance li a,
+ul.exam li a {
+    color: #fff;
+}
+
+ul.dropdown li:hover,
+ul.attendance li:hover,
+ul.exam li:hover {
+    display: block;
+    background-color: #000000b0;
+    z-index: 1000;
+}
+
+.drive-list:hover ul.dropdown li {
+    display: block;
+}
+
+.exam-menu:hover ul.exam li {
+    display: block;
+}
+
+.attendance-menu:hover ul.attendance li {
+    display: block;
+}
+
+.result-top{
+    height:100vh;
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.result-top .img{
+    width:40%;
+}
+.result-top .img img{
+    width: 100%;
+}
+.result-top .qoutes{
+    width:40%;
+    display: grid;
+    grid-gap:50px;
+}
+.result-top .qoutes q{
+    font-size: 20px;
+}
+.result-top .qoutes h1{
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.932);
+}
+.result-filter{
+    padding:1rem;
+}
+.result-filter h1{
+    padding:0.5rem 0 3rem 1rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.932);
+}
+.result-filter .filter-details{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:20px;
+}
+.result-filter .filter-details .box{
+    display:flex;
+    width:15%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(183, 182, 182);
+    padding:0 1rem;
+    position:relative;
+}
+.result-filter .filter-details .box h4{
+    padding-top:1rem;
+}
+.result-filter .filter-details .box .box-right{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    width:40%;
+    padding-top: 1rem;
+}
+.result-filter .filter-details .box .box-right,.box-left{
+    padding-bottom:1rem;
+}
+.result-filter .filter-details .box .box-right input{
+    padding:5px;
+    border:none;
+    outline:none;
+}
+.result-filter .filter-details button{
+    padding:0.5rem 2rem;
+    cursor:pointer;
+    border:none;
+    outline:none;
+    background-color:rgba(0, 0, 139, 0.704);
+    color:white;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 4px;
+}
+.result-filter .filter-details button:hover{
+    background-color:rgb(3, 3, 107);
+}
+.result-filter .filter-details button:active{
+    scale:0.99;
+}
+.result-details h1{
+    text-align: center;
+    padding: 2rem 0rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.932);
+}
+.rd{
+    display:flex;
+    width:100%;
+    justify-content: space-around;
+    padding:1rem 0;
+    /* border:1px solid black; */
+}
+.rd .detail1 h4,.detail2 h4{
+    padding:10px;
+}
+.result-content{
+    display: flex;
+    justify-content: center;
+    height:50vh;
+    padding:4rem;
+}
+.result-content table{
+    width:80%;
+    border:1px solid black;
+}
+.result-content table td,th{
+    border:1px solid black;
+    background-color: rgba(68, 68, 68, 0.34);
+}
+.result-content table td{
+    text-align: center;
+}
+.result-content table .passfail{
+    color:rgb(1, 101, 1);
+    font-weight: 600;
+}
+
+@media (max-width:1024px){
+    .result-filter .filter-details .box{
+        width:40%;
+    }
+}
+@media (max-width:768px){
+    .rd{
+        display:block;
+    }
+    .rd h4{
+        text-align: center;
+    }
+    .result-top .qoutes{
+        font-size:12px;
+    }
+}
+@media (max-width:435px){
+    .result-filter .filter-details .box{
+        width:60%;
+    }
+}

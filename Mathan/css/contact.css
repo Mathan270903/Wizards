@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.home-container {
+    font-family: 'Outfit', sans-serif;
+    color: #fff;
+}
+
+nav {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 2rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    
+}
+
+.logo img {
+    height: 100px;
+    width: 200px;
+}
+
+.lists ul {
+    list-style-type: none;
+    display: flex;
+
+}
+
+.lists ul li {
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.lists ul li a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #fff;
+    padding: 0 1rem;
+}
+
+.btns a {
+    padding: 0 0.5rem;
+    font-size: 1.1rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btns .logout {
+    padding: 0.5rem;
+    border-radius: 10px;
+    background-color: red;
+}
+
+ul.dropdown,
+ul.attendance,
+ul.exam {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    color: #000;
+    z-index: 999;
+}
+
+ul.dropdown li,
+ul.attendance li,
+ul.exam li {
+    height: 50px;
+    background-color: #000;
+    display: none;
+}
+
+ul.dropdown li a,
+ul.attendance li a,
+ul.exam li a {
+    color: #fff;
+}
+
+ul.dropdown li:hover,
+ul.attendance li:hover,
+ul.exam li:hover {
+    display: block;
+    background-color: #000000b0;
+    z-index: 1000;
+}
+
+.drive-list:hover ul.dropdown li {
+    display: block;
+}
+
+.exam-menu:hover ul.exam li {
+    display: block;
+}
+
+.attendance-menu:hover ul.attendance li {
+    display: block;
+}
+
+.bg-image {
+    height: 500px;
+    width: 100%;
+    position: relative;
+}
+
+.bg-image img {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.contents {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    z-index: 1;
+}
+
+.contents h1 {
+    font-size: 3rem;
+    color: red;
+}
+
+.contents p {
+    font-size: 1.5rem;
+    color: rgba(255, 0, 0, 0.668);
+}
+
+.contact form {
+    width: 600px;
+    color: #000;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+}
+
+.contact h2{
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem 0;
+}
+
+.contact form label {
+    padding: 1rem 0;
+    font-weight: 600;
+}
+
+.contact form input {
+    height: 30px;
+}
+
+.contact button {
+    margin: 1rem 0;
+    background-color: orange;
+    height: 30px;
+}
+
+.footer {
+    background: #000;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.footer h3 {
+    text-align: center;
+    font-family: italic;
+    
+}
+
+.footer p {
+    text-align: center;
+}

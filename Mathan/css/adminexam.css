@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Outfit', sans-serif;
+}
+
+.admin-container {
+    display: flex;
+}
+
+nav {
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    width: 250px;
+    border-right: 1px solid black;
+}
+
+nav .user-icon {
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul li {
+    padding: 1rem 0;
+}
+
+nav ul li a {
+    font-size: 1.1rem;
+    color: black;
+   
+}
+
+nav ul li a:hover {
+    border-bottom: 1px solid grey;
+}
+
+nav img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+
+}
+
+.btns {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+}
+
+.btns a {
+    width: 50%;
+    padding:8px 0px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: red;
+    border:none;
+    outline:none;
+    font-size: 16px;
+    font-weight:600;
+    color:rgb(255, 255, 255);
+    border-radius:4px;
+}
+
+.admin {
+    padding: 1rem;
+    width: 100%;
+}
+
+.admin h1 {
+    color: red;
+    text-align: center;
+}
+
+.admin .academic-result, 
+.admin .placement-result {
+    display: flex;
+    flex-direction: column;
+}
+
+.admin .academic-result input,
+.admin .placement-result input {
+    max-width: 50%;
+    margin: 1rem 0;
+    padding: 0.2rem;
+}
+
+.admin .academic-result label, 
+.admin .placement-result label {
+    font-weight: 600;
+}
+
+.btn {
+    padding:8px 0px;
+    margin-bottom: 2rem;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: rgba(37, 116, 0, 0.874);
+    border:none;
+    outline:none;
+    font-size: 16px;
+    font-weight:600;
+    color:rgb(255, 255, 255);
+    border-radius:4px;
+    width:50%;
+}

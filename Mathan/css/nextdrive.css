@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.home-container {
+    font-family: 'Outfit', sans-serif;
+    
+}
+
+nav {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 2rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    
+}
+
+.logo img {
+    height: 100px;
+    width: 200px;
+}
+
+.lists ul {
+    list-style-type: none;
+    display: flex;
+
+}
+
+.lists ul li {
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.lists ul li a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #fff;
+    padding: 0 1rem;
+}
+
+.btns a {
+    padding: 0 0.5rem;
+    font-size: 1.1rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btns .logout {
+    padding: 0.5rem;
+    border-radius: 10px;
+    background-color: red;
+}
+
+ul.dropdown,
+ul.attendance,
+ul.exam {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    color: #000;
+    z-index: 999;
+}
+
+ul.dropdown li,
+ul.attendance li,
+ul.exam li {
+    height: 50px;
+    background-color: #000;
+    display: none;
+}
+
+ul.dropdown li a,
+ul.attendance li a,
+ul.exam li a {
+    color: #fff;
+}
+
+ul.dropdown li:hover,
+ul.attendance li:hover,
+ul.exam li:hover {
+    display: block;
+    background-color: #000000b0;
+    z-index: 1000;
+}
+
+.drive-list:hover ul.dropdown li {
+    display: block;
+}
+
+.exam-menu:hover ul.exam li {
+    display: block;
+}
+
+.attendance-menu:hover ul.attendance li {
+    display: block;
+}
+
+.nextdrive-top{
+    height:100vh;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.nextdrive-top .img{
+    width:60%;
+    height:70%;
+    padding-right:2rem;
+}
+.nextdrive-top .img img{
+    height: 100%;
+    width: 100%;
+}
+.quote {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size:25px;
+    gap: 100px;
+    text-wrap: wrap;
+    padding-left:5rem;
+}
+
+.img1 {
+    width: 60%;
+}
+
+.img1 img {
+    height: 40%;
+    width: 40%;
+    padding: 10%;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+}
+.details{
+    width: 50%;
+    padding:20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-left: 6%;
+    text-wrap: wrap;
+}
+.details p {
+    padding-bottom: 4%;
+    font-size: 20px;
+}
+.details ul li{
+    font-size:16px;
+    list-style-type: none;
+    padding-left: 1.5rem;
+}

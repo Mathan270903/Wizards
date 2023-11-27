@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.home-container {
+    font-family: 'Outfit', sans-serif;
+    color: #fff;
+}
+
+nav {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 2rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    
+}
+
+.logo img {
+    height: 100px;
+    width: 200px;
+}
+
+.lists ul {
+    list-style-type: none;
+    display: flex;
+
+}
+
+.lists ul li {
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.lists ul li a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #fff;
+    padding: 0 1rem;
+}
+
+.btns a {
+    padding: 0 0.5rem;
+    font-size: 1.1rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btns .logout {
+    padding: 0.5rem;
+    border-radius: 10px;
+    background-color: red;
+}
+
+ul.dropdown,
+ul.attendance,
+ul.exam {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    color: #000;
+    z-index: 999;
+}
+
+ul.dropdown li,
+ul.attendance li,
+ul.exam li {
+    height: 50px;
+    background-color: #000;
+    display: none;
+}
+
+ul.dropdown li a,
+ul.attendance li a,
+ul.exam li a {
+    color: #fff;
+}
+
+ul.dropdown li:hover,
+ul.attendance li:hover,
+ul.exam li:hover {
+    display: block;
+    background-color: #000000b0;
+    z-index: 1000;
+}
+
+.drive-list:hover ul.dropdown li {
+    display: block;
+}
+
+.exam-menu:hover ul.exam li {
+    display: block;
+}
+
+.attendance-menu:hover ul.attendance li {
+    display: block;
+}
+
+.bg-image {
+    height: 500px;
+    width: 100%;
+    position: relative;
+}
+
+.bg-image img {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.contents {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    z-index: 1;
+}
+
+.contents h1 {
+    font-size: 3rem;
+    color: red;
+}
+
+.contents p {
+    font-size: 1.5rem;
+    color: rgba(255, 0, 0, 0.668);
+}
+
+.home {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: #000;
+}
+
+.image {
+    height: 350px;
+    width: 400px;
+    margin: auto;
+    padding-bottom: 3rem;
+    
+}
+
+.image img {
+    height: 90%;
+    width: 100%;
+    background-size: cover;
+}
+
+
+
+.image-content {
+    height: 300px;
+    width: 600px;
+    padding-top: 2rem;
+    margin-right: auto;
+    
+}
+
+.home h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.home p {
+    font-weight: 500
+}
+
+.footer {
+    background: #000;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.footer h3 {
+    text-align: center;
+    font-family: italic;
+    
+}
+
+.footer p {
+    text-align: center;
+}

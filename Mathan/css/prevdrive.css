@@ -1,0 +1,169 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.home-container {
+    font-family: 'Outfit', sans-serif;
+    
+}
+
+nav {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 2rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    
+}
+
+.logo img {
+    height: 100px;
+    width: 200px;
+}
+
+.lists ul {
+    list-style-type: none;
+    display: flex;
+
+}
+
+.lists ul li {
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.lists ul li a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #fff;
+    padding: 0 1rem;
+}
+
+.btns a {
+    padding: 0 0.5rem;
+    font-size: 1.1rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btns .logout {
+    padding: 0.5rem;
+    border-radius: 10px;
+    background-color: red;
+}
+
+ul.dropdown,
+ul.attendance,
+ul.exam {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    color: #000;
+    z-index: 999;
+}
+
+ul.dropdown li,
+ul.attendance li,
+ul.exam li {
+    height: 50px;
+    background-color: #000;
+    display: none;
+}
+
+ul.dropdown li a,
+ul.attendance li a,
+ul.exam li a {
+    color: #fff;
+}
+
+ul.dropdown li:hover,
+ul.attendance li:hover,
+ul.exam li:hover {
+    display: block;
+    background-color: #000000b0;
+    z-index: 1000;
+}
+
+.drive-list:hover ul.dropdown li {
+    display: block;
+}
+
+.exam-menu:hover ul.exam li {
+    display: block;
+}
+
+.attendance-menu:hover ul.attendance li {
+    display: block;
+}
+
+.con {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.con img {
+    height: 80%;
+    width: 90%;
+}
+
+.quote {
+    width: 50%;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 80px;
+    text-wrap: wrap;
+}
+
+.img1 {
+    width: 60%;
+}
+
+.img1 img {
+    height: 40%;
+    width: 40%;
+    padding: 10%;
+}
+
+.c {
+    display: flex;
+    align-items: center;
+}
+.details{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-left: 6%;
+    text-wrap: wrap;
+}
+.details p {
+    padding-bottom: 4%;
+    font-size: 20px;
+}
+.x{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    text-wrap: wrap;
+}
+.x p {
+    padding-bottom: 4%;
+    font-size: 20px;
+}
